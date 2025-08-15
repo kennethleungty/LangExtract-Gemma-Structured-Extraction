@@ -1,0 +1,1515 @@
+Extracted 507 entities:
+
+• entity: 'Us, the Company'
+  - role: party
+  - description: Insurance Provider
+• entity: 'You, Our Policyholder'
+  - role: party
+  - description: Contract Holder
+• clause: 'This Policy'
+  - type: contractual
+  - description: Defines the terms of the insurance agreement
+• entity: 'The insurance We provide in this Policy'
+  - role: coverage
+  - description: Coverage offered by the insurer
+• clause: 'subject to the terms, conditions, exclusions contained in this Policy, Certificate of Insurance, the Schedule and any Endorsement to this Policy'
+  - type: governing_clause
+  - trigger_event: none
+• entity: 'Us'
+  - role: party
+  - description: The Insurer
+• clause: 'in consideration of Your paying to Us the required Premium'
+  - type: condition
+  - trigger_event: Your paying to Us the required Premium
+• clause: 'We agree to indemnify You in the manner and to the extent described in the Policy and in the Schedule'
+  - type: coverage
+  - trigger_event: events occurring during the Period of Insurance
+• entity: 'Your'
+  - role: party
+  - description: The Insured
+• entity: 'Us'
+  - role: party
+  - description: The Insurer
+• clause: 'in respect of events occurring during the Period of Insurance, or any subsequent period for which You pay and We accept the required Premium'
+  - type: coverage
+  - trigger_event: events occurring during the Period of Insurance, or any subsequent period for which You pay and We accept the required Premium
+• entity: 'Your'
+  - role: party
+  - description: The Insured
+• entity: 'MSIG Insurance (Singapore) Pte. Ltd.'
+  - role: party
+  - description: Insurance provider
+• entity: 'Policyholder / Insured / You / Your'
+  - role: party
+  - description: Individual contracting insurance
+• clause: 'Claims Conditions'
+  - type: condition
+  - trigger_event: Claims
+• clause: 'General Exclusions'
+  - type: exclusion
+• clause: 'Section I - Insurance on the Insured Vehicle'
+  - type: section_reference
+  - location: Section I
+• clause: 'Section II - Liability to Third Parties'
+  - type: section_reference
+  - location: Section II
+• clause: 'Section III - Medical Expenses'
+  - type: section_reference
+  - location: Section III
+• clause: 'Section IV - Personal Accident Benefits'
+  - type: section_reference
+  - location: Section IV
+• clause: 'No Claim Discount'
+  - type: discount
+• clause: 'Jurisdiction Clause'
+  - type: legal_clause
+• clause: 'Avoidance of Certain Terms and Right of Recovery'
+  - type: legal_clause
+• clause: 'Limits of Liability'
+  - type: limitation
+• entity: 'any person named in the Schedule as "Authorised Drivers"'
+  - role: party
+  - description: Designated driver
+• entity: 'any person named in Certificate of Insurance under "Persons or classes of persons entitled to drive"'
+  - role: party
+  - description: Another group of designated drivers
+• clause: 'In the event of the death of the Policyholder'
+  - type: coverage clause
+  - trigger_event: the death of the Policyholder
+• clause: 'Authorised Driver includes:'
+  - type: definition
+  - scope: Authorised Driver
+• clause: 'any member of the Policyholder's family or a paid driver who have been driving any vehicle described in the Schedule during the life of the Policyholder and permission to drive has not been withdrawn prior to the death of the Policyholder.'
+  - type: coverage clause
+  - trigger_event: death of the Policyholder
+  - scope: member of the Policyholder's family or a paid driver
+• condition: 'permission to drive has not been withdrawn prior to the death of the Policyholder'
+  - type: condition
+  - cause: withdrawal of permission
+• clause: 'any other person who has been given permission to drive any vehicle described in the Schedule prior to the death of the Policyholder and such permission has not been withdrawn by the Policyholder.'
+  - type: coverage clause
+  - trigger_event: death of the Policyholder
+  - scope: any other person who has been given permission to drive
+• condition: 'such permission has not been withdrawn by the Policyholder'
+  - type: condition
+  - cause: withdrawal of permission
+• entity: 'the person driving'
+  - role: party
+  - description: Driver of a vehicle
+• clause: 'permitted in accordance with the licensing or other laws or regulations to drive any vehicle described in the Schedule or has been so permitted and is not disqualified by order of a Court of Law or by reason of any enactment or regulation in that behalf from driving such vehicle'
+  - type: condition
+  - trigger_event: permitted in accordance with the licensing or other laws or regulations
+• entity: 'We / Us / Our / the Company'
+  - role: party
+  - description: Insurance provider
+• entity: 'MSIG Insurance (Singapore) Pte. Ltd.'
+  - role: party
+  - description: Insurance Company
+• entity: 'The Schedule'
+  - role: document
+  - description: Details of cover
+• entity: 'Insured Vehicle'
+  - role: object
+  - description: Vehicle being insured
+• clause: 'means the vehicle we are insuring for You as shown in the Schedule, fitted with standard equipment by the manufacturer or distributor without any modification to any parts, accessories, windscreen and/or windows, unless otherwise declared with details and endorsed under this Policy.'
+  - type: definition
+  - scope: Insured Vehicle
+• entity: 'Geographical Area'
+  - role: region
+  - description: Area of coverage
+• clause: '1. The Republic of Singapore
+2. West Malaysia
+3. Transit by direct sea route across:
+ a. the straits between the island of Penang and the mainland of West Malaysia
+b.'
+  - type: geographic_coverage
+  - locations: ['The Republic of Singapore', 'West Malaysia']
+• entity: 'the straits between Changi Point, Singapore and Tanjong Belungkor, Johore'
+  - role: location
+  - description: Geographic area covered
+• clause: 'subject to the Policyholder or other person for the time being in charge of the Insured Vehicle having complied in all things with the rules, regulations or lawful directions of the carrier'
+  - type: condition
+  - trigger_event: compliance with rules, regulations or lawful directions of the carrier
+• entity: 'That part of Thailand within 80 kilometres of the border between Thailand and West Malaysia'
+  - role: location
+  - description: Geographic area covered
+• legislation: 'Road Transport Act 1987 (Malaysia)'
+  - type: legal_framework
+  - jurisdiction: Malaysia
+• legislation: 'Motor Vehicles (Third Party Risks & Compensation) Act (Cap. 189) (Republic of Singapore)'
+  - type: legal_framework
+  - jurisdiction: Republic of Singapore
+• legislation: 'Road Traffic Act (Cap 276) (Republic of Singapore)'
+  - type: legal_framework
+  - jurisdiction: Republic of Singapore
+• legislation: 'or any Amendment, Act or Acts passed in substitution'
+  - type: legal_framework
+  - description: Applies to any amendments to the above
+• entity: 'MSIG Insurance (Singapore) Pte. Ltd.'
+  - role: party
+  - description: Insurance Provider
+• entity: '4 Shenton Way, #21-01 SGX Centre 2'
+  - role: location
+  - description: Address of MSIG Insurance
+• entity: 'Singapore'
+  - role: location
+  - description: Country
+• entity: 'Tel: (65) 6827 7888'
+  - role: contact_information
+  - type: phone_number
+• entity: 'Fax: (65) 6827 7800'
+  - role: contact_information
+  - type: fax_number
+• clause: 'This Policy and the Schedule shall be read together as one contract'
+  - type: interpretation
+  - trigger_event: reading the policy
+• clause: 'any word or expression to which a specific meaning has been attached in any part of this Policy or of the Schedule shall bear such specific meaning wherever it may appear.'
+  - type: interpretation
+  - trigger_event: specific meaning
+• clause: 'Every notice or communication to be given or made under this Policy shall be delivered in writing to Us.'
+  - type: communication
+  - trigger_event: notice or communication
+• entity: 'Us'
+  - role: party
+  - description: MSIG Insurance
+• entity: 'You and Your Authorised Driver'
+  - role: party
+  - description: The insured party and their driver
+• clause: 'take all reasonable steps to safeguard the Insured Vehicle from loss or damage'
+  - type: coverage
+  - trigger_event: loss or damage
+• clause: 'to maintain the Insured Vehicle in efficient condition'
+  - type: coverage
+  - trigger_event: efficient condition
+• clause: 'We shall have at all times free and full access to examine the Insured Vehicle or any part thereof or any driver or employee of You or Your Authorised Driver'
+  - type: coverage
+  - trigger_event: access to examine
+• clause: 'In the event of any accident or breakdown, the Insured Vehicle shall not be left unattended without proper precautions being taken to prevent further loss or damage'
+  - type: condition
+  - trigger_event: accident or breakdown
+  - limitation: proper precautions
+• clause: 'if the Insured Vehicle be driven before the necessary repairs are effected, any extension of the damage or any further damage to the Insured Vehicle shall be excluded from the scope of the indemnity granted by this Policy'
+  - type: exclusion
+  - trigger_event: driven before the necessary repairs are effected
+  - limitation: extension of the damage or any further damage
+• entity: 'Policy'
+  - role: document
+  - description: Insurance Policy document
+• clause: 'will take effect from the date We receive the original Certificate of Insurance'
+  - type: operational
+  - trigger_event: We receive the original Certificate of Insurance
+• condition: 'Any refund will be calculated as follows:'
+  - type: calculation
+  - method: formula
+• clause: 'Premium x Unexpired Period of Insurance (days) Original Period of Insurance* (days)'
+  - type: calculation
+  - formula: Premium x Unexpired Period of Insurance (days) Original Period of Insurance* (days)
+• condition: 'Premium x Unexpired Period of Insurance (days) x 80% Original Period of Insurance* (days)'
+  - type: calculation
+  - formula: Premium x Unexpired Period of Insurance (days) x 80% Original Period of Insurance* (days)
+• definition: 'Original Period of Insurance of the Policy shall be deemed to include any extension of period in the Policy'
+  - type: clarification
+  - scope: Original Period of Insurance
+• condition: 'No refund will be payable if the refund premium is less than S$25 or where a claim (including claim for windscreen or windows or IU) has arisen under the Policy'
+  - type: exclusion
+  - criteria: refund premium is less than S$25 or where a claim (including claim for windscreen or windows or IU) has arisen under the Policy
+• definition: 'A person who is not a party to this Policy contract shall have no right under the Contracts (Rights of Third Parties) Act (Cap 53B) to enforce any of its terms'
+  - type: legal_exclusion
+  - act: Contracts (Rights of Third Parties) Act (Cap 53B)
+• entity: 'this Policy'
+  - role: coverage clause
+  - description: The policy itself
+• entity: 'the Policyholder'
+  - role: party
+  - description: Holder of the policy
+• clause: 'Condition Precedent'
+  - type: condition
+  - description: A condition that must be met for the policy to be valid
+• condition: 'that: for the risk insured, the Policyholder has never had any insurance terminated in the last twelve (12) months due solely or in part to a breach of any premium payment condition'
+  - type: trigger
+  - cause: breach of any premium payment condition
+  - duration: last twelve (12) months
+• condition: 'if the Policyholder has declared that it has breached any premium payment condition in respect of a previous policy taken up with another insurer in the last twelve (12) months:'
+  - type: trigger
+  - cause: breach of any premium payment condition
+  - duration: last twelve (12) months
+• clause: 'the Policyholder has fully paid all outstanding premium for time on risk calculated by the previous insurer based on the customary short period rate'
+  - type: coverage clause
+  - trigger_event: fully paid all outstanding premium for time on risk
+• condition: 'and a copy of the written confirmation from the previous insurer to this effect is first provided by the Policyholder to Us before cover incepts.'
+  - type: trigger
+  - cause: written confirmation from the previous insurer
+  - action: provided to Us before cover incepts
+• entity: 'Policy'
+  - role: coverage document
+  - description: Defines the terms of insurance
+• clause: 'it is hereby agreed and declared that if the Period of Insurance is sixty (60) days or more'
+  - type: warranty
+  - trigger_event: the Period of Insurance is sixty (60) days or more
+• condition: 'any premium due must be paid and actually received in full'
+  - type: payment_requirement
+  - time_limit: sixty (60) days
+• entity: 'Us (or the intermediary through whom this Policy was effected)'
+  - role: party
+  - description: The insurer
+• entity: 'Us'
+  - role: party
+  - description: The insurance company
+• clause: 'any premium due is not paid and actually received in full'
+  - type: payment_condition
+  - trigger_event: premium due is not paid and actually received in full
+• condition: 'within the sixty (60) - day period referred to above'
+  - type: time_limit
+  - duration: sixty (60) - day period
+• clause: 'the cover under the Policy, Renewal Certificate or Cover Note is automatically terminated immediately after the expiry of the said sixty (60) - day period'
+  - type: termination_clause
+  - trigger_event: premium not paid within sixty (60) - day period
+  - outcome: automatic termination
+• condition: 'without prejudice to any liability incurred within the said sixty (60) - day period'
+  - type: liability_protection
+  - duration: sixty (60) - day period
+• entity: 'We'
+  - role: party
+  - description: The insurance company
+• clause: 'shall be entitled to a pro-rata time on risk premium'
+  - type: premium_recovery
+  - amount: pro-rata
+• condition: 'subject to a minimum of S$25'
+  - type: minimum_amount
+  - amount: S$25
+• entity: 'Us'
+  - role: party
+  - description: The insurance company
+• clause: 'any premium due must be paid and actually received in full'
+  - type: payment_condition
+  - trigger_event: premium due must be paid and actually received in full
+• entity: 'Us'
+  - role: party
+  - description: The insurance company
+• condition: 'within the Period of Insurance'
+  - type: time_limit
+  - duration: Period of Insurance
+• entity: 'the whole Policy'
+  - role: coverage
+  - description: The entire insurance agreement
+• clause: 'it is hereby agreed and declared that the total premium due'
+  - type: payment_condition
+  - trigger_event: total premium due
+• condition: 'must be paid and actually received in full'
+  - type: payment_condition
+  - trigger_event: must be paid and actually received in full
+• entity: 'Us (or the intermediary through whom this Policy was effected)'
+  - role: party
+  - description: The insurer
+• date: 'the inception date'
+  - type: coverage_start_date
+  - description: Date the coverage begins
+• clause: 'shall not attach'
+  - type: termination_clause
+  - trigger_event: total premium due is not paid and actually received in full
+• clause: 'no benefits whatsoever shall be payable by Us'
+  - type: exclusion
+  - description: No benefits will be paid
+• entity: 'We'
+  - role: party
+  - description: Provides coverage
+• entity: 'You'
+  - role: party
+  - description: Receives coverage
+• clause: 'We will act in good faith in all Our dealings with You'
+  - type: general_condition
+  - trigger_event: all Our dealings
+• clause: 'You are required to observe the following conditions in the event of any accident involving the Insured Vehicle.'
+  - type: condition
+  - trigger_event: any accident involving the Insured Vehicle
+• clause: 'Notification of Accidents'
+  - type: condition
+  - trigger_event: any accident involving the Insured Vehicle
+• clause: 'You or Your Authorised Driver shall report the accident to Us or Our Authorised Representative and convey or cause to be conveyed the Insured Vehicle to Our Authorised Workshop for inspection within twenty four (24) hours of the accident or by the next working day thereof.'
+  - type: condition
+  - trigger_event: any accident involving the Insured Vehicle
+  - time_limit: twenty four (24) hours of the accident or by the next working day thereof
+• clause: 'In case of theft or other criminal act which may give rise to a claim under this Policy, You or Your Authorised Driver shall give immediate notice of the occurrence to Us and the police and cooperate with us in securing the conviction of the offender.'
+  - type: condition
+  - trigger_event: theft or other criminal act which may give rise to a claim under this Policy
+  - time_limit: immediate
+• clause: 'Every letter, claim, writ, summons and process shall be notified or forwarded unanswered to Us immediately on receipt.'
+  - type: reporting_requirement
+  - trigger_event: receipt
+• entity: 'Us'
+  - role: party
+  - description: Insurance company
+• clause: 'Notice shall also be given to Us immediately after You or any person claiming to be indemnified'
+  - type: notification
+  - trigger_event: You or any person claiming to be indemnified shall have knowledge of any impending prosecution, inquest, inquiry or offer of composition
+• condition: 'is a condition precedent to liability'
+  - type: condition_precedent
+  - description: Required for liability to arise
+• clause: 'failure to comply with any of the above requirements in respect of any accident and/or an occurrence'
+  - type: consequence
+  - trigger_event: any accident and/or an occurrence
+• clause: 'will result in You or Your Authorised Driver being denied indemnity under both Section I and Section II of the Policy in respect of that particular accident and/or occurrence'
+  - type: consequence
+  - trigger_event: failure to comply with any of the above requirements
+• condition: 'Notwithstanding the No Claim Discount provisions set out herein, failure to comply with this condition precedent will additionally result in You losing all or part of Your No Claim Discount as set out below.'
+  - type: condition_precedent
+  - trigger_event: failure to comply with this condition precedent
+• entity: 'No Claim Discount'
+  - role: discount
+  - description: Reduction on premium
+• entity: 'Your No Claim Discount'
+  - role: discount
+  - description: Reduction on premium
+• entity: 'You'
+  - role: party
+  - description: Policyholder
+• clause: 'Accident NCD -  Refers to the loss of percentage of No Claim Discount'
+  - type: definition
+  - trigger_event: claims arising from an accident
+• clause: 'Non-Reporting NCD - Refers to the loss of percentage of No Claim Discount as a result of not reporting or late reporting of an accident as set out under the Policy.'
+  - type: definition
+  - trigger_event: not reporting or late reporting of an accident
+• clause: 'No admission, offer, promise or payment shall be made by or on behalf of You or any person claiming to be indemnified without Us giving Our written consent.'
+  - type: coverage clause
+  - condition: requires written consent
+• entity: 'Us'
+  - role: party
+  - description: Insurance Company
+• clause: 'We may at Our sole discretion: (a) take over and conduct in Your name or such person the defence or settlement of any claim, or (b) prosecute in Your name or such person for Our own benefit any claim for indemnity or damages, or (c) conduct and settle proceedings as We deem fit.'
+  - type: coverage clause
+  - condition: at Our sole discretion
+• entity: 'You and Your Authorised Driver'
+  - role: party
+  - description: Named insured and driver
+• clause: 'We have these rights'
+  - type: condition
+  - description: Establishes insurer’s rights
+• clause: 'to evaluate and exercise these rights'
+  - type: condition
+  - description: Requirement for insured to cooperate
+• clause: 'You and any person claiming to be indemnified must assist Us by'
+  - type: condition
+  - description: Obligation to provide assistance
+• clause: 'providing all such information and assistance as We may require'
+  - type: condition
+  - description: Requirement to provide information
+• entity: 'We'
+  - role: party
+  - description: Insurance company
+• clause: 'allowing Us the right to examine the nature and extent of all damage to the Insured Vehicle before it is repaired'
+  - type: coverage
+  - trigger_event: damage to the Insured Vehicle
+• condition: 'whether or not You or Your Authorised Driver is entitled or intends to claim an indemnity under this Policy for the damage to the Insured Vehicle.'
+  - type: condition
+  - description: Doesn't affect the insurer's right to examine
+• clause: 'In case damage to the Insured Vehicle is indemnifiable by this Policy'
+  - type: coverage
+  - trigger_event: damage to the Insured Vehicle
+• clause: 'You shall decide whether or not to claim for such damage under this Policy'
+  - type: condition
+  - description: Right to choose whether to claim
+• clause: 'if so claiming, shall submit such a claim to Us within fourteen (14) days of occurrence or discovery of damage'
+  - type: condition
+  - description: Time limit for submitting claim
+• clause: 'The quoted cost of repair is subject to adjustment by Us before any repair may commence'
+  - type: condition
+  - description: Cost adjustment
+• clause: 'if it exceeds the Authorised Repair Limit in total'
+  - type: condition
+  - description: Trigger for cost adjustment
+• entity: 'Authorised Repair Limit'
+  - role: limit
+  - description: Maximum repair cost
+• entity: 'We'
+  - role: party
+  - description: Insurance Company
+• clause: 'If at the time any claim arises under this Policy there is any other insurance covering the same loss, damage or liability'
+  - type: coverage clause
+  - trigger_event: any claim arises under this Policy
+• condition: 'We shall not be liable to pay or contribute more than Our rateable proportion of any loss, damage, compensation, costs or expenses.'
+  - type: limitations
+  - limit: Our rateable proportion of any loss, damage, compensation, costs or expenses
+• clause: 'Provided always that nothing in this Condition shall impose on Us any liability from which but for this Condition it would have been relieved under Proviso (i) to Section II - 2 of this Policy.'
+  - type: exclusion
+  - trigger_event: nothing in this Condition
+• clause: 'If there is any disagreement on the amount to be paid under this Policy (liability being otherwise admitted)'
+  - type: dispute resolution
+  - trigger_event: any disagreement on the amount to be paid
+• clause: 'such difference shall be referred to an arbitrator to be appointed in writing.'
+  - type: dispute resolution
+  - method: arbitration
+• condition: 'If You and We cannot agree on a single arbitrator, we should each appoint an arbitrator within one (1) calendar month after having been required in writing by the other.'
+  - type: dispute resolution
+  - time_limit: one (1) calendar month
+• condition: 'If the two (2) arbitrators do not agree, an umpire shall be appointed in writing by the arbitrators.'
+  - type: dispute resolution
+  - method: umpire appointment
+• entity: 'the umpire'
+  - role: party
+  - description: Neutral third party
+• clause: 'shall sit with the arbitrators and preside at their meetings'
+  - type: role
+  - description: Responsibilities of the umpire
+• clause: 'the making of an award shall be a condition precedent to any right of action against Us'
+  - type: condition
+  - trigger_event: any right of action against Us
+• entity: 'We'
+  - role: party
+  - description: Insurance Company
+• clause: 'If We shall offer an amount in settlement or disclaim liability for any claim hereunder'
+  - type: offer
+  - trigger_event: offer in settlement or disclaim liability
+• clause: 'and such claim shall not within twelve (12) calendar months from the date of such disclaimer have been referred to arbitration under the provisions contained in the Policy or been made subject to pending court action'
+  - type: condition
+  - trigger_event: claim shall not within twelve (12) calendar months from the date of such disclaimer have been referred to arbitration under the provisions contained in the Policy or been made subject to pending court action
+• clause: 'then the claim shall for all purposes be deemed to have been abandoned and shall not thereafter be recoverable hereunder'
+  - type: condition
+  - trigger_event: claim shall for all purposes be deemed to have been abandoned
+  - limitation: shall not thereafter be recoverable
+• clause: 'Conditions Precedent to the Company's Liability'
+  - type: condition
+  - description: Conditions for the company to be liable
+• clause: 'The due observance and fulfilment of the Terms of this Policy insofar as they relate to anything to be done or not to be done by You or any person claiming to be indemnified'
+  - type: condition
+  - description: Requirement to adhere to policy terms
+• clause: 'and the truth of the statements and answers in the application'
+  - type: condition
+  - description: Truthfulness of application information
+• entity: 'The Terms of this Policy'
+  - role: document
+  - description: Defines the policy terms
+• entity: 'the Policyholder'
+  - role: party
+  - description: Holder of the policy
+• entity: 'the Authorised Driver'
+  - role: party
+  - description: Person operating the vehicle under the policy
+• entity: 'Any accident, loss, damage or liability'
+  - role: event
+  - description: Describes the insured event
+• clause: 'caused sustained or incurred'
+  - type: condition
+  - trigger_event: sustained or incurred
+• condition: 'outside the Geographical Area'
+  - type: exclusion
+  - location: Geographical Area
+• condition: 'whilst any Insured Vehicle in respect of which indemnity is provided'
+  - type: coverage
+  - trigger_event: any Insured Vehicle
+• clause: 'being used otherwise than in accordance with the Limitations as to Use'
+  - type: condition
+  - cause: Limitations as to Use
+• clause: 'being driven by or is for the purpose of being driven by him in the charge of any person other than an Authorised Driver'
+  - type: condition
+  - cause: Authorized Driver
+• clause: 'being driven by the Policyholder or by any person on the order of or with the permission of the Policyholder whilst under the influence of intoxicating liquor or drugs'
+  - type: condition
+  - cause: Intoxicating liquor or drugs
+• clause: 'being used or driven when it is not registered or licensed under the legislation or when the registration or licensing under the legislation has been cancelled'
+  - type: condition
+  - cause: Registration or licensing under the legislation
+• clause: 'being used or driven with modifications that have not been approved by the Registrar of Vehicles in accordance with the Road Traffic (Motor Vehicles, Registration and Licensing) Rules or by any relevant regulatory authority'
+  - type: condition
+  - cause: Modifications
+• entity: 'Any liability'
+  - role: subject
+  - description: Legal responsibility
+• clause: 'which attaches by virtue of an agreement'
+  - type: cause_of_liability
+  - trigger_event: an agreement
+• clause: 'but which would not have attached in the absence of such agreement'
+  - type: condition
+  - description: Specifies the circumstances under which liability arises
+• clause: 'Any loss, damage, liability or expense'
+  - type: coverage
+  - description: Potential claims
+• clause: 'directly or indirectly caused by or contributed to by or arising from'
+  - type: trigger
+  - description: Defines the scope of coverage
+• clause: 'ionising radiations from or contamination by radioactivity from any nuclear fuel or from any nuclear waste or from the combustion of nuclear fuel'
+  - type: exclusion
+  - cause: ionising radiations from nuclear fuel/waste
+• clause: 'the radioactive, toxic, explosive or other hazardous or contaminating properties of any nuclear installation, reactor or other nuclear assembly or nuclear components thereof'
+  - type: exclusion
+  - cause: hazardous properties of nuclear installations
+• clause: 'any weapon or device employing atomic or nuclear fission and/or fusion or other like reaction or radioactive force or matter'
+  - type: exclusion
+  - cause: atomic/nuclear fission/fusion
+• clause: 'the radioactive, toxic, explosive or other hazardous or contaminating properties of any radioactive matter.'
+  - type: exclusion
+  - cause: radioactive matter
+• entity: 'the exclusion'
+  - role: exclusion
+  - description: Limits coverage
+• entity: 'radioactive isotopes'
+  - role: covered_item
+  - description: Subject to exclusion
+• condition: 'when such isotopes are being prepared, carried, stored, or used for commercial, agricultural, medical, scientific or other similar peaceful purposes'
+  - type: trigger
+  - cause: preparation, carrying, storage, or use
+• entity: 'We'
+  - role: party
+  - description: Insurance Provider
+• clause: 'any loss or damage occasioned directly or indirectly by or through or in consequence of any of the following occurrences'
+  - type: coverage
+  - trigger_event: any of the following occurrences
+• occurrence: 'permanent or temporary dispossession resulting from confiscation nationalisation commandeering or requisition by any lawfully constituted authority'
+  - type: cause
+  - description: Dispossession due to government action
+• occurrence: 'permanent or temporary dispossession of Insured Vehicle resulting from the unlawful occupation of such Insured Vehicle by any person'
+  - type: cause
+  - description: Dispossession due to unlawful occupation
+• condition: 'provided that We are not relieved of any liability to the Policyholder in respect of physical damage to the Insured Vehicle occurring before dispossession or during temporary dispossession which is otherwise covered by this Policy'
+  - type: condition
+  - trigger_event: physical damage to the Insured Vehicle occurring before dispossession or during temporary dispossession
+• entity: 'We'
+  - role: party
+  - description: Insurance Provider
+• clause: 'In any action suit or other proceeding where We allege that by reason of the provisions above any loss destruction or damage is not covered by this insurance'
+  - type: legal
+  - trigger_event: any loss destruction or damage is not covered by this insurance
+• clause: 'the burden of proving that such loss destruction or damage is covered shall be upon the Policyholder'
+  - type: legal
+  - trigger_event: loss destruction or damage is covered
+• entity: 'Any death, disability, loss, damage, destruction, legal liabilities, cost or expense'
+  - role: covered_event
+  - description: Events covered by the policy
+• clause: 'directly or indirectly caused by, resulting from or in connection with any of the following'
+  - type: coverage
+  - trigger_event: any of the following
+• condition: 'war, invasion, acts of foreign enemies, hostilities or warlike operations (whether war be declared or not)'
+  - type: trigger
+  - cause: war
+• condition: 'civil war, rebellion, revolution, insurrection, civil commotion assuming the proportions of or amounting to an uprising, military or usurped power'
+  - type: trigger
+  - cause: civil war
+• condition: 'any act of terrorism including but not limited to'
+  - type: trigger
+  - cause: terrorism
+• clause: 'the use or threat of force, violence and/or, harm or damage to life or to property (or the threat of such harm or damage)'
+  - type: coverage
+  - trigger_event: the use or threat of force, violence and/or, harm or damage to life or to property (or the threat of such harm or damage)
+• clause: 'including, but not limited to, nuclear radiation and/or contamination by chemical and/or biological agents'
+  - type: coverage
+  - trigger_event: nuclear radiation and/or contamination by chemical and/or biological agents
+• condition: 'by any person(s) or group(s) of persons'
+  - type: trigger
+  - cause: any person(s) or group(s) of persons
+• condition: 'committed for political'
+  - type: trigger
+  - cause: political
+• entity: 'religious, ideological or similar purposes'
+  - role: cause
+  - description: Reason for exclusion
+• clause: 'express or otherwise'
+  - type: description
+  - scope: religious, ideological or similar purposes
+• clause: 'and/or to put the public or any section of the public in fear'
+  - type: exclusion
+  - trigger_event: put the public or any section of the public in fear
+• clause: '(c) any action taken in controlling, preventing, suppressing or in any way relating to (a) or (b) above'
+  - type: coverage
+  - scope: actions relating to (a) or (b) above
+• entity: 'We'
+  - role: party
+  - description: Insurance Provider
+• clause: 'any loss, damage, cost or expense is not covered by this insurance'
+  - type: coverage clause
+  - trigger_event: loss, damage, cost or expense is not covered
+• condition: 'the burden of proving the contrary shall be upon the Policyholder or Authorised Driver'
+  - type: condition
+  - responsibility: Policyholder or Authorised Driver
+• clause: 'Any accident loss, damage or liability directly or indirectly, proximately or remotely occasioned by, contributed to by or traceable to or arising out of or in connection with strike or riot'
+  - type: coverage clause
+  - trigger_event: strike or riot
+• condition: 'the person claiming to be indemnified shall prove that the accident, loss, damage or liability arose independently of and was in no way connected with or occasioned by or contributed to by or traceable to any of the said occurrences or any consequence thereof'
+  - type: condition
+  - responsibility: Person claiming to be indemnified
+• condition: 'in default of such proof We shall not be liable to make any payment in respect of such a claim'
+  - type: condition
+  - responsibility: We
+• entity: 'Us'
+  - role: party
+  - description: Insurance Provider
+• clause: 'Any claim or provide any benefit hereunder'
+  - type: coverage
+  - trigger_event: claim or provide any benefit
+• condition: 'would expose Us to any sanction, prohibition or restriction under United Nations resolutions or the trade or economic sanctions, laws or regulations of the European Union or United Kingdom or United States of America'
+  - type: exclusion
+  - cause: sanction, prohibition or restriction
+• entity: 'SECTION I - INSURANCE ON THE INSURED VEHICLE'
+  - role: document
+  - description: Policy Section
+• clause: 'Loss or Damage'
+  - type: coverage
+  - trigger_event: Loss or Damage
+• entity: 'the Policyholder'
+  - role: party
+  - description: Receives Coverage
+• entity: 'the Insured'
+  - role: party
+  - description: Vehicle Covered
+• entity: 'its accessories and spare parts'
+  - role: covered_item
+  - description: Items covered under the policy
+• condition: 'whilst thereon arising anywhere within the Geographical Area'
+  - type: location
+  - area: Geographical Area
+• clause: 'Our liability shall not exceed the value of the parts lost or damaged and the reasonable cost of fitting such parts.'
+  - type: limitation
+  - limit: value of the parts lost or damaged and the reasonable cost of fitting such parts
+• entity: 'Us'
+  - role: party
+  - description: Insurance Company
+• entity: 'You'
+  - role: party
+  - description: Insured
+• clause: 'maximum liability shall be limited to the prevailing market value of the Insured Vehicle at the time of the loss or damage'
+  - type: limitation
+  - trigger_event: loss or damage
+• clause: 'Loss or Damage to Windscreen or Window and In Vehicle Unit (IU)'
+  - type: coverage
+  - trigger_event: breakage of such glass
+• condition: 'provided there is no other damage to the Insured Vehicle'
+  - type: condition
+  - cause: other damage
+• condition: 'You shall be responsible to pay for the first S$100 or the amount specified as Windscreen Excess in the Schedule and its applicable GST, whichever is the higher amount for each and every claim made under this sub-section.'
+  - type: deductible
+  - amount: S$100 or the amount specified as Windscreen Excess
+  - trigger_event: each and every claim made under this sub-section
+• entity: 'the Insured Vehicle'
+  - role: property
+  - description: Subject of coverage
+• clause: 'If the Insured Vehicle is disabled by reason of loss or damage insured under this Policy'
+  - type: coverage
+  - trigger_event: loss or damage insured under this Policy
+• party: 'We'
+  - role: insurer
+  - description: Provides payment
+• clause: 'will bear the reasonable cost of up to S$500 for protection and removal to the nearest repairers and for delivery within the Geographical Area'
+  - type: coverage
+  - trigger_event: loss or damage insured under this Policy
+  - limitations: up to S$500
+• entity: 'the Geographical Area'
+  - role: location
+  - description: Area of operation
+• clause: 'Authority to Repair'
+  - type: policy_provision
+  - description: Allows repair authorization
+• party: 'The Policyholder'
+  - role: policyholder
+  - description: Authorizes repairs
+• clause: 'may authorise the repair of the Insured Vehicle necessitated by damage for which We may be liable under this Policy'
+  - type: condition
+  - trigger_event: damage for which We may be liable under this Policy
+• clause: 'provided that: (a) the estimated cost of such repair does not exceed the Authorised Repair Limit and (b) a detailed estimate of the cost is forwarded to Us without delay'
+  - type: condition
+  - limitations: Authorised Repair Limit
+  - trigger_event: damage for which We may be liable under this Policy
+• entity: 'Us'
+  - role: insurer
+  - description: Receives estimate
+• entity: 'the Insured Vehicle'
+  - role: covered_asset
+  - description: Vehicle insured under the policy
+• clause: 'Schedule if the Insured Vehicle is driven by or under the control of any person (other than the Policyholder)'
+  - type: coverage_clause
+  - trigger_event: driven by or under the control
+• condition: 'who at the time of loss or damage to the Insured Vehicle is 26 years of age or below'
+  - type: condition
+  - trigger_event: loss or damage to the Insured Vehicle
+  - criteria: 26 years of age or below
+• condition: 'and/or has held a valid driving license for 2 years or less'
+  - type: condition
+  - trigger_event: has held a valid driving license for 2 years or less
+  - criteria: 2 years or less
+• clause: 'If We have made any payment under Section I which includes the excesses mentioned in (a) and/or (b) above'
+  - type: payment_clause
+  - trigger_event: We have made any payment under Section I
+• clause: 'You have to pay Us the amount of the excesses'
+  - type: payment_obligation
+  - trigger_event: We have made any payment under Section I
+• clause: 'The excesses mentioned above are applicable for every claim made under Section I of this Policy for loss of or damage to the Insured Vehicle'
+  - type: coverage_clause
+  - trigger_event: every claim made under Section I of this Policy for loss of or damage to the Insured Vehicle
+• limitation: 'but shall not apply to loss or damage to the Insured Vehicle caused by fire, external explosion, self ignition, lightning, burglary, housebreaking or theft'
+  - type: exclusion
+  - cause: fire, external explosion, self ignition, lightning, burglary, housebreaking or theft
+• entity: 'depreciation, wear and tear, mechanical or electronic breakdown, equipment or computer malfunction'
+  - role: exclusion
+  - description: Reasons for non-coverage
+• clause: 'damage to tyres unless damage is caused to other parts of the Insured Vehicle simultaneously in the same accident'
+  - type: exclusion
+  - trigger_event: damage is caused to other parts of the Insured Vehicle simultaneously in the same accident
+• entity: 'the Policyholder'
+  - role: party
+  - description: Receives coverage
+• entity: 'Policyholder'
+  - role: party
+  - description: The insured party
+• clause: 'shall become legally liable to pay in respect of:'
+  - type: obligation
+  - trigger_event: death of or bodily injury to any person, damage to property
+• clause: 'death of or bodily injury to any person'
+  - type: coverage
+  - trigger_event: death of or bodily injury to any person
+• clause: 'damage to property'
+  - type: coverage
+  - trigger_event: damage to property
+• condition: 'where such death or injury or damage arises out of an accident caused by or arising out of'
+  - type: trigger
+  - cause: an accident
+• clause: 'the use of the Insured Vehicle'
+  - type: coverage
+  - trigger_event: the use of the Insured Vehicle
+• clause: 'the driving by the Policyholder of any private motor car other than those belonging to or hired (under a hire purchase agreement or otherwise) to him or his employer or his partner'
+  - type: coverage
+  - trigger_event: the driving by the Policyholder of any private motor car
+• condition: 'while the vehicle mentioned in (i) or (ii) above is within the Geographical Area'
+  - type: trigger
+  - cause: the vehicle mentioned in (i) or (ii) above is within the Geographical Area
+• entity: 'Driver'
+  - role: party
+  - description: Operator of the Insured Vehicle
+• clause: 'against all sums, including claimant's costs and expenses'
+  - type: coverage
+  - trigger_event: claimant's costs and expenses
+• entity: 'such Authorised Driver'
+  - role: party
+  - description: The driver covered by the policy
+• clause: 'death of or bodily injury to any person'
+  - type: coverage
+  - trigger_event: death of or bodily injury to any person
+• clause: 'damage to property'
+  - type: coverage
+  - trigger_event: damage to property
+• condition: 'where such death or bodily injury or damage arises out of an accident'
+  - type: trigger
+  - cause: accident
+• condition: 'caused by or arising out of the use of the Insured Vehicle'
+  - type: trigger
+  - cause: use of the Insured Vehicle
+• clause: 'provided that such Authorised Driver:'
+  - type: condition
+  - description: Conditional coverage
+• clause: 'is not entitled to indemnity under any other policy'
+  - type: exclusion
+  - description: Prevents double recovery
+• clause: 'shall as though he were the Policyholder observe, fulfil and be subject to the Terms of this Policy'
+  - type: condition
+  - description: Obligation to adhere to policy terms
+• entity: 'We'
+  - role: party
+  - description: The Insurance Company
+• clause: 'indemnify his personal representatives'
+  - type: coverage
+  - trigger_event: liability incurred by such person
+• condition: 'in the terms of and subject to the limitations of this Section'
+  - type: limitation
+  - location: this Section
+• condition: 'provided that such representatives shall as though they were the Policyholder observe, fulfil and be subject to the Terms of this Policy'
+  - type: condition
+  - trigger_event: Policy Terms
+• clause: 'We will pay all costs and expenses incurred with Our written consent'
+  - type: coverage
+  - trigger_event: costs and expenses
+• entity: 'Limits of Liability'
+  - role: financial_limit
+  - description: Maximum payout amount
+• clause: 'for legal services for defence of any charge of causing death by driving the Insured Vehicle'
+  - type: coverage
+  - trigger_event: charge of causing death by driving
+• entity: 'the Insured Vehicle'
+  - role: property
+  - description: Vehicle covered by the policy
+• condition: 'other than murder'
+  - type: exclusion
+  - cause: murder
+• entity: 'the Policyholder or any other person'
+  - role: party
+  - description: Subject to indemnity
+• condition: 'who is driving on the Policyholder's order or with his permission'
+  - type: trigger
+  - cause: driving
+• clause: 'in respect of any death which may be the subject of indemnity under this Section'
+  - type: coverage
+  - trigger_event: death
+• exclusion: '1. death of or bodily injury to any person arising out of and in the course of such person's employment by the person claiming to be the indemnified'
+  - type: exclusion
+  - cause: employment
+• exclusion: '2. damage to property belonging to or held in trust by or in the custody or control of:'
+  - type: exclusion
+  - cause: property damage
+• clause: '(i) the Policyholder or any member of his household'
+  - type: exclusion
+  - cause: household property damage
+• clause: '(ii) any Authorised Driver claiming to be indemnified under Section II - 2 or any member of his household'
+  - type: exclusion
+  - cause: authorized driver property damage
+• entity: 'We'
+  - role: party
+  - description: Insurance Provider
+• clause: 'indemnify the Policyholder'
+  - type: coverage clause
+  - trigger_event: death or bodily injury
+• entity: 'the Policyholder'
+  - role: party
+  - description: Receives benefits
+• condition: 'arising out of violent, accidental, external and visible means'
+  - type: trigger
+  - cause: violent, accidental, external and visible means
+• entity: 'the Insured Vehicle'
+  - role: property
+  - description: Vehicle involved in the accident
+• entity: 'an Authorised Driver or any passenger of the Insured Vehicle'
+  - role: party
+  - description: Person covered by the policy
+• clause: 'while you are getting into or out of or driving the Insured Vehicle'
+  - type: coverage clause
+  - trigger_event: getting into or out of or driving the Insured Vehicle
+• clause: 'or travelling as passenger in the Insured Vehicle'
+  - type: coverage clause
+  - trigger_event: travelling as passenger in the Insured Vehicle
+• clause: 'or any other private car'
+  - type: coverage clause
+  - trigger_event: travelling in any other private car
+• condition: 'If You have more than one private motor car insurance policy with Us'
+  - type: limitation
+  - restriction: payment will be made under one (1) Policy only
+• entity: 'We'
+  - role: party
+  - description: Insurance Provider
+• clause: 'will not pay for death or bodily injury'
+  - type: exclusion
+  - trigger_event: death or bodily injury
+• entity: 'You or Your Authorised Driver'
+  - role: party
+  - description: Named insured party
+• condition: 'is not less than 18 or more than 65 years of age'
+  - type: age_restriction
+  - min_age: 18
+  - max_age: 65
+• entity: 'the passenger(s) travelling in the Insured Vehicle'
+  - role: party
+  - description: Named insured party
+• condition: 'is not less than 16 or more than 65 years of age'
+  - type: age_restriction
+  - min_age: 16
+  - max_age: 65
+• condition: 'the death or bodily injury shall occur within three (3) calendar months of the accident'
+  - type: time_limit
+  - duration: three (3) calendar months
+  - trigger_event: the accident
+• condition: 'independent of any other cause (except medical or surgical treatment consequent upon such injury)'
+  - type: exception
+  - exception_cause: medical or surgical treatment consequent upon such injury
+• entity: 'occurring more than three (3) calendar months after the accident'
+  - role: condition
+  - trigger_event: the accident
+• limitation: 'more than three (3) calendar months'
+• clause: 'arising directly or indirectly from intentional self-injury, suicide, attempted suicide (whether felonious or not)'
+  - type: exclusion
+  - cause: intentional self-injury, suicide, attempted suicide
+• clause: 'arising from any accident happening while the driver of the Insured Vehicle is under the influence of intoxicating liquor or drugs.'
+  - type: exclusion
+  - cause: under the influence of intoxicating liquor or drugs
+• entity: 'We'
+  - role: party
+  - description: The insurer
+• clause: 'make payment under only one of the sub-sections (1) to (6) above'
+  - type: payment_clause
+  - trigger_event: any occurrence
+• entity: 'the Policyholder'
+  - role: party
+  - description: The insured person
+• condition: 'in respect of death or bodily injury suffered by the Policyholder'
+  - type: trigger
+  - cause: death or bodily injury
+• entity: 'the Insured Vehicle'
+  - role: asset
+  - description: Vehicle insured under the policy
+• entity: 'the Authorised Driver or passenger of the Insured Vehicle'
+  - role: party
+  - description: Driver or passenger of the insured vehicle
+• condition: 'If the number of persons (including the driver) in the Insured Vehicle at the time of occurrence exceeds the number stated as the legal seating capacity'
+  - type: trigger
+  - cause: exceeds the legal seating capacity
+• limitation: 'We shall be liable only for a pro rata proportion of the compensation which otherwise would be payable'
+  - type: pro_rata_limitation
+  - percentage: pro rata
+• condition: 'We will pay the compensation only with Your approval'
+  - type: approval_condition
+  - party: Your
+• condition: 'and will pay it directly to the injured Authorised Driver or passenger or their personal representatives'
+  - type: payment_direction
+  - recipient: injured Authorised Driver or passenger or their personal representatives
+• entity: 'the personal representatives'
+  - role: party
+  - description: Receives discharge
+• clause: 'receipt by the personal representatives of this payment shall be a full and final discharge to Us for such compensation'
+  - type: discharge clause
+  - trigger_event: receipt by the personal representatives of this payment
+• entity: 'Us'
+  - role: party
+  - description: Recipient of coverage
+• clause: 'In the event of no claim being made or arising under this Policy during a Period of Insurance specified below immediately preceding the renewal of this Policy the renewal premium shall be reduced as follows:'
+  - type: discount clause
+  - trigger_event: no claim being made or arising under this Policy
+• entity: 'this Policy'
+  - role: coverage
+  - description: Subject of the policy
+• entity: 'Period of Insurance'
+  - role: time period
+  - description: Defines the time frame for discount
+• entity: 'renewal of this Policy'
+  - role: time period
+  - description: Related to policy renewal
+• entity: 'the renewal premium'
+  - role: financial component
+  - description: Premium amount
+• clause: 'Discount'
+  - type: discount
+  - trigger_event: no claim being made or arising under this Policy
+• entity: 'the preceding year'
+  - role: time period
+  - description: Reference period for discount
+• percentage: '10%'
+• entity: 'the preceding two consecutive years'
+  - role: time period
+  - description: Reference period for discount
+• percentage: '20%'
+• entity: 'the preceding three consecutive years'
+  - role: time period
+  - description: Reference period for discount
+• percentage: '30%'
+• entity: 'the preceding four consecutive years'
+  - role: time period
+  - description: Reference period for discount
+• percentage: '40%'
+• entity: 'the preceding five or more consecutive years'
+  - role: time period
+  - description: Reference period for discount
+• percentage: '50%'
+• clause: 'If at the time of a claim the No Claim Discount is 40% or 50%, the No Claim Discount shall be reduced to 10% or 20% respectively at the next renewal of the Policy.'
+  - type: discount modification clause
+  - trigger_event: a claim
+• percentage: '40%'
+• percentage: '50%'
+• percentage: '10%'
+• percentage: '20%'
+• clause: 'If the No Claim Discount is 30% or less, then the whole No Claim Discount is rescinded.'
+  - type: discount rescission clause
+  - trigger_event: No Claim Discount is 30% or less
+• percentage: '30%'
+• clause: 'If more than one claim is made during any one Period of Insurance the entire No Claim Discount is rescinded, irrespective of the percentage earned.'
+  - type: discount rescission clause
+  - trigger_event: more than one claim is made during any one Period of Insurance
+• clause: 'the whole No Claim Discount is rescinded.'
+  - type: discount rescission clause
+  - trigger_event: more than one claim is made during any one Period of Insurance
+• entity: 'the Insured Vehicle'
+  - role: covered_asset
+  - description: Subject to coverage
+• clause: 'If more than one Insured Vehicle is described in the Schedule'
+  - type: coverage_condition
+  - trigger_event: more than one Insured Vehicle is described in the Schedule
+• clause: 'the No Claim Discount shall be applied as if a separate Policy has been issued in respect of each such Insured Vehicle'
+  - type: coverage_condition
+  - trigger_event: more than one Insured Vehicle is described in the Schedule
+• entity: 'We'
+  - role: party
+  - description: Insurance company
+• clause: 'If We shall consent to a transfer of interest in this Policy'
+  - type: coverage_condition
+  - trigger_event: consent to a transfer of interest in this Policy
+• clause: 'the period during which the interest was in the Transferor shall not accrue to the benefit of the Transferee'
+  - type: coverage_condition
+  - trigger_event: consent to a transfer of interest in this Policy
+• entity: 'the Policyholder'
+  - role: party
+  - description: Policyholder
+• entity: 'Authorised Driver'
+  - role: party
+  - description: Driver covered by the policy
+• clause: 'the No Claim Discount shall be affected by any late notification or any failure in notification of an accident and/or occurrence'
+  - type: coverage_condition
+  - trigger_event: late notification or any failure in notification of an accident and/or occurrence
+• clause: 'in accordance to Sub-Section 1 of Claims Conditions'
+  - type: reference
+  - location: Sub-Section 1 of Claims Conditions
+• clause: 'JURISDICTION CLAUSE'
+  - type: legal_clause
+  - description: Jurisdictional limitations
+• clause: 'The indemnity under this Policy shall not apply in respect of judgments which are not in the first instance delivered by or obtained from a Court of competent jurisdiction within West Malaysia or the Republic of Singapore.'
+  - type: legal_clause
+  - description: Jurisdictional limitations
+• clause: 'AVOIDANCE OF CERTAIN TERMS AND RIGHT OF RECOVERY'
+• entity: 'We'
+  - role: party
+  - description: The insurer
+• clause: 'are obliged by virtue of the Legislation or the Agreement executed between the Minister of Transport of the Government of Malaysia and the Motor Insurer's Bureau of West Malaysia on 30 March 1992 or the Agreement executed between the Minister for Finance of the Republic of Singapore and the Motor Insurer's Bureau of Singapore on 22 February 1975 or by any agreement which alters, amends or supercedes such Agreement'
+  - type: obligation
+  - trigger_event: alteration, amendment, or supersedes such Agreement
+• condition: 'to pay an amount for which We would not otherwise be liable under this Policy'
+  - type: trigger
+  - cause: alteration, amendment, or supersedes such Agreement
+• limitation: 'under Section II - Items 1(a) and 2(a) in respect of any one claim or series of claims arising out of one event'
+  - type: coverage_limit
+  - amount: Unlimited
+  - trigger_event: one event
+• limitation: 'under S$5,000,000 in respect of any one claim or series of claim arising out of one event'
+  - type: coverage_limit
+  - amount: S$5,000,000
+  - trigger_event: one event
+• limitation: 'under S$3,000'
+  - type: coverage_limit
+  - amount: S$3,000
+  - trigger_event: one event
+• entity: 'Our liability'
+  - role: coverage
+  - description: Liability limit
+• clause: 'under S$1,000'
+  - type: limit
+  - amount: S$1,000
+• entity: 'each person injured'
+  - role: party
+  - description: Recipient of coverage
+• clause: 'arising out of one accident'
+  - type: condition
+  - trigger_event: one accident
+• entity: 'Authorised Repair Limit'
+  - role: limit
+  - amount: S$350
+• clause: 'As detailed in the Schedule and/or Certificate of Insurance'
+  - type: limitation
+  - description: Referencing supplemental documentation
+• clause: 'Car pooling Arrangements'
+  - type: exclusion
+  - description: Excludes carpooling arrangements
+• clause: 'The carriage of passengers pursuant to car pooling arrangements and the payments made by the passengers thereunder or any of them towards the running expenses of any vehicle described in the Schedule'
+  - type: condition
+  - trigger_event: carriage of passengers pursuant to car pooling arrangements
+• clause: 'shall not be deemed to constitute use for hire or reward'
+  - type: exclusion
+  - description: Excludes use for hire or reward
+• entity: 'Policy Owners’ Protection Scheme'
+  - role: protection
+  - description: Protection scheme
+• entity: 'Singapore Deposit Insurance Corporation (SDIC)'
+  - role: administrator
+  - description: Administers the protection scheme
+• clause: 'Coverage for your policy is automatic and no further action is required from you'
+  - type: condition
+  - trigger_event: automatic coverage
+• entity: 'You'
+  - role: policyholder
+  - description: The individual covered by the policy
+• clause: 'are covered under Section I of this Policy'
+  - type: coverage_scope
+  - trigger_event: covered under Section I
+• clause: 'are subject to the Terms, Exceptions and Conditions of this Policy'
+  - type: governing_rules
+  - trigger_event: Terms, Exceptions and Conditions
+• condition: 'unless We expressly state otherwise'
+  - type: exception
+  - cause: expressly state otherwise
+• entity: 'Us'
+  - role: party
+  - description: Provider of services
+• entity: 'Our appointed assistance company'
+  - role: party
+  - description: Provides assistance services
+• entity: 'You'
+  - role: party
+  - description: Recipient of services
+• clause: 'to assist You in an emergency'
+  - type: coverage
+  - trigger_event: an emergency
+• condition: 'caused by or arising out of the use of the Insured Vehicle'
+  - type: trigger
+  - cause: use of the Insured Vehicle
+• condition: 'within the Geographical Area'
+  - type: trigger
+  - location: Geographical Area
+• condition: 'unless otherwise stated'
+  - type: exception
+• clause: 'The caller will be required to always identify themselves by their full name and Policy number'
+  - type: requirement
+• entity: 'MSIG 24 HOUR EMERGENCY HELPLINE'
+  - role: contact_information
+  - description: Emergency contact
+• entity: '(65) 6337 1208'
+  - role: contact_information
+  - description: Phone number
+• entity: 'Automobile Assistance Services'
+  - role: service
+  - description: Specific service offering
+• clause: 'Please note that the Services under Items (i) to (xiv) are purely on referral or arrangement basis.'
+  - type: disclaimer
+  - basis: referral or arrangement
+• clause: 'All costs and expenses incurred for the services listed below are to be borne by You.'
+  - type: responsibility
+  - bearer: You
+• entity: '(i) Emergency Towing Assistance'
+  - role: service
+  - description: Specific service offering
+• entity: '(ii) Roadside Repair Assistance'
+  - role: service
+  - description: Specific service offering
+• entity: '(iii) Alternative Travel Assistance'
+  - role: service
+  - description: Specific service offering
+• entity: '(iv) Repatriation of the Insured Vehicle'
+  - role: service
+  - description: Specific service offering
+• entity: '(v) Arrangement of Rental Vehicle'
+  - role: service
+  - description: Specific service offering
+• entity: '(vi) Arrangement of Hotel Accommodation Assistance'
+  - role: service
+  - description: Specific service offering
+• entity: '(vii) Accident Notification Assistance'
+  - role: service
+  - description: Specific service offering
+• entity: '(viii) Police Report Assistance'
+  - role: service
+  - description: Specific service offering
+• entity: 'Insured Vehicle'
+  - role: covered_asset
+  - description: The vehicle insured under the policy
+• clause: 'Locksmith Referral'
+  - type: service_referral
+  - description: Referral to locksmith services
+• clause: 'Claims Procedure Assistance'
+  - type: service_assistance
+  - description: Assistance with claims procedures
+• clause: 'Claims Reporting Assistance'
+  - type: service_assistance
+  - description: Assistance with claims reporting
+• clause: 'Referral to Claims Personnel'
+  - type: service_referral
+  - description: Referral to claims personnel
+• clause: 'Arrangement and Payment of Emergency Medical Evacuation and Repatriation'
+  - type: coverage
+  - description: Coverage for medical evacuation and repatriation
+• entity: 'Our appointed assistance company'
+  - role: party
+  - description: Provides assistance services
+• condition: 'when in a Serious Injury, as a result of an accident arising from the use of the Insured Vehicle within the Geographical Area (excluding Singapore)'
+  - type: trigger
+  - cause: Serious Injury, an accident arising from the use of the Insured Vehicle within the Geographical Area (excluding Singapore)
+• limitation: 'to the nearest hospital where appropriate medical care is available'
+  - type: destination
+  - location: nearest hospital where appropriate medical care is available
+• limitation: 'to the limit of S$50,000'
+  - type: financial_cap
+  - amount: S$50,000
+• condition: 'provided below which shall be solely the Policyholder's responsibility'
+  - type: financial_responsibility
+  - assignee: Policyholder
+• entity: 'The Policyholder'
+  - role: party
+  - description: Recipient of coverage
+• clause: 'Limit of Indemnity for the Policyholder or any one accident arising from the use of the Insured Vehicle'
+  - type: coverage clause
+  - trigger_event: use of the Insured Vehicle
+• entity: 'S$50,000'
+  - role: amount
+  - description: Maximum payout per accident
+• clause: 'emergency medical evacuation'
+  - type: coverage clause
+  - trigger_event: emergency medical evacuation
+• clause: 'emergency medical repatriation'
+  - type: coverage clause
+  - trigger_event: emergency medical repatriation
+• condition: 'Subject otherwise to the terms, conditions and exceptions of the Policy'
+  - type: general condition
+  - description: Governing rules for the policy
+• clause: 'DriveShield Value Plan 2012'
+  - type: policy_name
+  - description: Name of the insurance plan
+• entity: 'It is hereby understood and agreed'
+  - role: agreement
+  - description: Sets forth conditions of the policy
+• entity: 'the Limitations as to Use'
+  - role: clause
+  - description: Defines restrictions on policy usage
+• clause: 'but subject otherwise to the Terms of this Policy'
+  - type: condition
+  - description: Overrides previous conditions
+• entity: 'the insurance granted thereby'
+  - role: coverage
+  - description: The insurance provided
+• entity: 'the Policyholder'
+  - role: party
+  - description: Recipient of coverage
+• entity: 'the Insured Vehicle'
+  - role: asset
+  - description: Vehicle covered by the policy
+• entity: 'a member of the Motor Trade'
+  - role: party
+  - description: Person in control of the vehicle
+• clause: 'for the purpose of overhaul upkeep or repair'
+  - type: condition
+  - description: Specifies the purpose of vehicle control
+• entity: 'DAMAGE AND/OR THEFT OF CAR RADIO/CASSETTE/COMPACT DISC PLAYER'
+  - role: loss_event
+  - description: Specific loss covered
+• clause: 'The indemnity provided by Section I of this Policy extends to any claim by the Policyholder for the cost of repair and/or replacement of the radio/cassette/compact disc player installed in the Insured Vehicle following damage and/or theft of the same'
+  - type: coverage
+  - trigger_event: damage and/or theft of the same
+• condition: 'provided there is no further damage to the Insured Vehicle'
+  - type: condition
+  - description: Requires no secondary damage
+• limitations: 'up to an amount not exceeding S$1,000'
+• limitations: 'without the loss of the No Claim Discount nor the application of any Excess imposed under the Policy'
+• entity: 'the Hire Purchase Owners'
+  - role: party
+  - description: Parties involved in the agreement
+• clause: 'It is hereby understood and agreed that the Hire Purchase Owners named in the Schedule (hereinafter referred to as the Owners)'
+  - type: agreement_clause
+  - trigger_event: named in the Schedule
+• entity: 'the Owners'
+  - role: party
+  - description: Parties involved in the agreement
+• clause: 'and the Policyholder of the other part.'
+  - type: agreement_clause
+  - trigger_event: Policyholder of the other part
+• clause: 'It is further understood and agreed that any payment made in respect of loss or damage (which loss or damage is not made good by repair reinstatement or replacement) under Section I of this Policy shall be made to the Owners'
+  - type: coverage_clause
+  - trigger_event: loss or damage not made good by repair reinstatement or replacement
+• entity: 'the Owners'
+  - role: party
+  - description: Parties involved in the agreement
+• clause: 'as long as they are Owners of the Insured Vehicle and their receipt shall be a full and final discharge to the Company in respect of such loss or damage.'
+  - type: payment_clause
+  - trigger_event: receipt of payment
+• entity: 'the Company'
+  - role: party
+  - description: Recipient of payment
+• clause: 'It is also understood and agreed that notwithstanding any provision in the Hire Purchase Agreement to the contrary this Policy is issued to the Policyholder as the principal party and not as agent or trustee for the Owners and nothing herein shall be construed as constituting the'
+  - type: override_clause
+  - trigger_event: Hire Purchase Agreement to the contrary
+• entity: 'Policyholder'
+  - role: party
+  - description: Holder of the policy
+• entity: 'an agent or trustee for the Owners'
+  - role: party
+  - description: Represents the policyholders
+• clause: 'Policyholder shall not assign his rights benefits and claims under this Policy without the prior consent in writing of the Company'
+  - type: assignment restriction
+  - trigger_event: assignment
+• condition: 'prior consent in writing of the Company'
+  - type: condition
+  - cause: assignment
+• clause: 'The Company undertakes to obtain consent of the Owners/Lessors specified in the Schedule prior to their cancellation of the Policy if instructions have been received for the cancellation of the Policy'
+  - type: cancellation process
+  - trigger_event: cancellation of the Policy
+• clause: 'and also to advise the Owners/Lessors specified immediately of any other material changes which are proposed to be made in the Terms of this Policy'
+  - type: notification
+  - trigger_event: material changes to the Terms of this Policy
+• entity: 'the Company'
+  - role: party
+  - description: Provides coverage
+• entity: 'the Policyholder'
+  - role: party
+  - description: Holder of the policy
+• clause: 'indemnify in terms of Section II of this Policy'
+  - type: coverage
+  - trigger_event: mounting into dismounting from or travelling in the Insured Vehicle
+• entity: 'the Passenger'
+  - role: party
+  - description: Defined term for a person using the vehicle
+• condition: 'is not driving the Insured Vehicle or is in charge of the Insured Vehicle for the purpose of driving'
+  - type: restriction
+  - cause: driving the Insured Vehicle
+• condition: 'is not entitled to indemnity under any other Policy'
+  - type: restriction
+  - cause: other Policy
+• condition: 'shall as though he were the Policyholder observe fulfill and be subject to the Terms of this Policy in so far as they apply'
+  - type: requirement
+  - cause: Terms of this Policy
+• exclusion: 'death of or bodily injury to any person in the employment of the Passenger where such death or bodily injury arises out of and in the course of such employment'
+  - type: exclusion
+  - cause: death or bodily injury in the employment of the Passenger
+• exclusion: 'damage to property belonging to or held in trust by or in the custody or control of the Passenger or being conveyed by the Insured Vehicle'
+  - type: exclusion
+  - cause: damage to property
+• entity: 'the amount payable for storage charges of the Insured Vehicle'
+  - role: coverage
+  - description: Payment for storage costs
+• condition: 'shall be limited to the number of days recommended by the Surveyor to repair or replace any part of the Insured Vehicle'
+  - type: limitation
+  - limit: number of days recommended by the Surveyor
+• limitation: 'subject to a maximum of S$500'
+  - type: cap
+  - amount: S$500
+• clause: 'The indemnity shall not apply to any additional storage cost payable due to the delay caused by the parts being unavailable or need to be imported from outside of Singapore.'
+  - type: exclusion
+  - trigger_event: delay caused by the parts being unavailable or need to be imported from outside of Singapore
+• entity: 'the amount payable for freight charges or additional cost incurred to import any parts required for the repair or replacement'
+  - role: coverage
+  - description: Payment for freight charges
+• condition: 'shall be limited to the amount of sea freight charge payable'
+  - type: limitation
+  - limit: amount of sea freight charge payable
+• limitation: 'subject to a maximum of S$200'
+  - type: cap
+  - amount: S$200
+• entity: 'the Insured'
+  - role: party
+  - description: Receives coverage
+• clause: 'whilst the Insured Vehicle is being used by (refer to the Schedule) for social domestic or pleasure purposes with the permission of the Policyholder'
+  - type: coverage_clause
+  - trigger_event: use of the Insured Vehicle
+• entity: 'the Company'
+  - role: party
+  - description: Provides coverage
+• clause: 'in the terms of and subject to the limitations of and for the purposes of Section II of this Policy'
+  - type: coverage_clause
+  - trigger_event: any act or omission of the driver
+• condition: 'such person is not entitled to indemnity under any other Policy'
+  - type: exclusion
+  - cause: entitlement under any other Policy
+• condition: 'such person shall as though he were the Policyholder observe fulfill and be subject to the Terms of this Policy in so far as they apply.'
+  - type: condition
+  - cause: observe fulfill and be subject to the Terms of this Policy
+• entity: 'It'
+  - role: party
+  - description: Acknowledges understanding
+• clause: 'It is hereby understood and agreed notwithstanding anything to the contrary contained in this Policy'
+  - type: agreement
+  - description: Establishes a foundational understanding
+• condition: 'in the event of loss or damage to the Insured Vehicle or its accessories or spare parts'
+  - type: trigger
+  - cause: loss or damage
+• condition: 'necessitating the supply of a part not obtainable from stocks held in the country in which the Insured Vehicle is held for repair'
+  - type: trigger
+  - cause: part not obtainable from stocks
+• condition: 'or; if no such catalogue or price list exists the price last obtained at the Manufacturer's Works plus the reasonable cost of transport otherwise than by air to the country in which the Insured Vehicle is held for repair and the amount of the relative import duty'
+  - type: trigger
+  - cause: no such catalogue or price list exists
+• entity: 'It'
+  - role: party
+  - description: Referring to the Policy
+• clause: 'is hereby understood and agreed'
+  - type: agreement
+  - trigger_event: no specific event
+• entity: 'the words "strike or riot"'
+  - role: exclusion
+  - description: Excluded terms within General Exclusion 6
+• entity: '"civil commotion"'
+  - role: exclusion
+  - description: Excluded terms within General Exclusion 5(a)
+• clause: 'shall not apply to any accident loss damage or liability directly caused by:-'
+  - type: exclusion_clause
+  - trigger_event: no specific event
+• clause: '1. the act of any person taking part together with others in any disturbance of the public peace (whether in connection with a strike or lock-out or not)'
+  - type: coverage clause
+  - trigger_event: disturbance of the public peace
+• condition: 'whether in connection with a strike or lock-out or not'
+  - type: trigger
+  - cause: strike or lock-out
+• clause: 'or the action of any lawfully constituted authority in suppressing or attempting to suppress any such disturbance or in minimising the consequences of such disturbance'
+  - type: coverage clause
+  - trigger_event: suppression of disturbance
+• condition: 'or in minimising the consequences of such disturbance'
+  - type: trigger
+  - cause: minimising consequences
+• clause: '2. the willful act of any striker or locked out worker done in furtherance of a strike or in resistance to a lock-out or the action of any lawfully constituted authority in preventing or attempting to prevent any such act or in minimising the consequences of any such act'
+  - type: coverage clause
+  - trigger_event: resistance to lock-out
+• condition: 'or in minimising the consequences of any such act'
+  - type: trigger
+  - cause: minimising consequences
+• entity: 'the indemnity given by reason of this Endorsement'
+  - role: coverage clause
+  - description: Specific coverage provided by the endorsement
+• condition: 'shall not apply to any accident loss damage or liability'
+  - type: exclusion
+  - trigger_event: any accident loss damage or liability
+• clause: 'directly or indirectly proximately or remotely occasioned by contributed to by or traceable to or arising out of or in connection with'
+  - type: exclusion_trigger
+  - cause: war, invasion, acts of foreign enemies, hostilities or warlike operations (whether war be declared or not), civil war, rebellion, revolution, insurrection, civil commotion assuming the proportions of or amounting to an uprising, military or usurped power
+• condition: 'war, invasion, acts of foreign enemies, hostilities or warlike operations (whether war be declared or not), civil war, rebellion, revolution, insurrection, civil commotion assuming the proportions of or amounting to an uprising, military or usurped power'
+  - type: exclusion
+  - cause: war, invasion, acts of foreign enemies, hostilities or warlike operations
+• clause: 'any act of terrorism including but not limited to'
+  - type: exclusion_trigger
+  - cause: any act of terrorism
+• condition: 'the use or threat of force, violence and/or harm or damage to life or to property (or threat of such harm or damage)'
+  - type: exclusion
+  - cause: the use or threat of force, violence and/or harm or damage to life or to property
+• condition: 'including, but not limited to, nuclear radiation and/or contamination by chemical and/or biological agents'
+  - type: exclusion
+  - cause: nuclear radiation and/or contamination by chemical and/or biological agents
+• entity: 'by any person(s) or group(s) of persons'
+  - role: party
+  - description: Responsible for the action
+• clause: 'committed for political, religious, ideological or similar purposes, express or otherwise'
+  - type: cause
+  - trigger_event: committed for political, religious, ideological or similar purposes
+• entity: 'DriveShield Value Plan 2012'
+  - role: policy
+  - description: Insurance policy
+• clause: 'any action taken in controlling, preventing, suppressing or in any way relating to (a) or (b) above'
+  - type: coverage clause
+  - trigger_event: action taken in controlling, preventing, suppressing
+• entity: 'the Policyholder / Authorised Driver'
+  - role: party
+  - description: Claimant
+• clause: 'the accident loss damage or liability arose independently of and was in no way connected with or occasioned by or contributed to by or traceable to any of the said occurrences or any consequence thereof'
+  - type: condition
+  - trigger_event: claim
+• condition: 'In default of such proof the Company shall not be liable to make any payment in respect of such a claim.'
+  - type: condition
+  - cause: failure to prove
+• entity: 'the Company'
+  - role: party
+  - description: Insurer
+• entity: 'the Employer'
+  - role: party
+  - description: Beneficiary of indemnity
+• clause: 'It is hereby understood and agreed that in the terms of and subject to the limitations of the indemnity which is granted by Section II of this Policy to the Policyholder'
+  - type: indemnity clause
+  - trigger_event: Section II of this Policy
+• entity: 'Policyholder'
+  - role: party
+  - description: Named party under the policy
+• entity: 'Insured Vehicle'
+  - role: asset
+  - description: Vehicle covered under the policy
+• clause: 'whilst any Insured Vehicle in connection with which indemnity is granted under this Policy'
+  - type: coverage
+  - trigger_event: indemnity is granted
+• condition: 'other than a Insured Vehicle belonging to the Employer or hired to him under a Hire Purchase Agreement'
+  - type: exclusion
+  - cause: Vehicle belonging to the Employer or hired to him under a Hire Purchase Agreement
+• clause: 'being used upon the business of the Employer'
+  - type: usage
+  - activity: being used upon the business of the Employer
+• condition: 'such indemnity shall not include liability for death or bodily injury sustained by any person arising out of and in the course of the employment of such person by the Employer'
+  - type: exclusion
+  - cause: death or bodily injury sustained by any person arising out of and in the course of the employment of such person by the Employer
+• condition: 'Provided always that the Employer:-'
+  - type: condition
+  - cause: Employer
+• condition: 'is not entitled to indemnity under any other Policy'
+  - type: exclusion
+  - cause: indemnity under any other Policy
+• condition: 'shall as though he were the Policyholder observe fulfill and be subject to the Terms of this Policy in so far as they apply'
+  - type: compliance
+  - action: observe fulfill and be subject to
+• entity: 'No Insurer'
+  - role: party
+  - description: The party being referenced
+• clause: 'shall be deemed to provide cover'
+  - type: coverage
+  - trigger_event: deemed to provide cover
+• clause: 'shall be liable to pay any claim or provide any benefit hereunder'
+  - type: coverage
+  - trigger_event: pay any claim or provide any benefit
+• condition: 'would expose that Insurer to any sanction, prohibition or restriction under United Nations resolutions or the trade or economic sanctions, laws or regulations of the European Union or United Kingdom or United States of America'
+  - type: limitation
+  - cause: exposure to any sanction, prohibition or restriction
+  - source: United Nations resolutions or the trade or economic sanctions, laws or regulations of the European Union or United Kingdom or United States of America

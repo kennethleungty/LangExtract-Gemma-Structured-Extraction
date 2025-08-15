@@ -3,11 +3,12 @@ import textwrap
 
 from utils.parser import PDFProcessor
 
+
 prompt = textwrap.dedent("""\
-    Extract all entities, roles, clauses, and conditions from this insurance policy in the order they appear.
+    Extract all clauses, conditions, and limitations from this insurance policy in the order they appear.
     Use exact text for extractions. Do not paraphrase or overlap entities.
     For each, add brief attributes such as:
-        - Role / Type (party, coverage clause, exclusion, condition)
+        - Type (coverage clause, exclusion, condition)
         - Trigger / Event (what activates it)
         - Limitations (restrictions, caps, time limits)
     """)
@@ -16,16 +17,6 @@ examples = [
     lx.data.ExampleData(
         text="The Insurer agrees to indemnify the Insured against loss or damage to the Property caused by Fire, subject to the exclusions set forth in Section 5.",
         extractions=[
-            lx.data.Extraction(
-                extraction_class="entity",
-                extraction_text="The Insurer",
-                attributes={"role": "party", "description": "Provides coverage"}
-            ),
-            lx.data.Extraction(
-                extraction_class="entity",
-                extraction_text="the Insured",
-                attributes={"role": "party", "description": "Receives coverage"}
-            ),
             lx.data.Extraction(
                 extraction_class="clause",
                 extraction_text="indemnify the Insured against loss or damage to the Property",
@@ -55,30 +46,26 @@ if __name__ == "__main__":
     # Get concatenated text
     input_text = processor.get_all_text()
 
-    # result = lx.extract(
-    #     text_or_documents=input_text,
-    #     prompt_description=prompt,
-    #     examples=examples,
-    #     model_id="gemini-2.5-flash"
-    # )
-
     result = lx.extract(
         text_or_documents=input_text,
         prompt_description=prompt,
         examples=examples,
-        model_id="gemma3:4b",  # Automatically selects Ollama provider
-        model_url="http://localhost:11434",
+        model_id="gemma3:4b",  
+        model_url="http://localhost:11434",  # Default Ollama server URL
         fence_output=False,
-        use_schema_constraints=False
+        use_schema_constraints=False  # LangExtract doesn't implement schema constraints for Ollama models yet
     )
 
     # Save results to file
-    with open("extracted_entities.txt", "w", encoding="utf-8") as f:
+    output_file_name = "extracted_entities.txt"
+    with open(output_file_name, "w", encoding="utf-8") as f:
         f.write(f"Extracted {len(result.extractions)} entities:\n\n")
         for extraction in result.extractions:
             f.write(f"• {extraction.extraction_class}: '{extraction.extraction_text}'\n")
             if extraction.attributes:
                 for key, value in extraction.attributes.items():
-                    f.write(f"  - {key}: {value}\n")
+                    f.write(f" - {key}: {value}\n")
 
-    print("Extraction results saved to extracted_entities.txt")
+    print(f"Extraction results saved to {output_file_name}")
+
+    print(result.to_json(indent=2))  # Print the result in JSON format for debugging
