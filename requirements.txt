@@ -1,6 +1,4 @@
 langextract==1.0.8
 matplotlib==3.10.5
-ollama==0.5.3
-openai==1.99.9
 pillow==11.3.0
 PyMuPDF==1.26.3

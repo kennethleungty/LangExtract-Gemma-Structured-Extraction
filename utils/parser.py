@@ -18,7 +18,6 @@ class PDFProcessor:
         self.pdf_document = fitz.open(file_path)
         self.docs = None
         
-        # Create images folder
         os.makedirs("images", exist_ok=True)
         print(f"Loaded PDF: {file_path} ({self.pdf_document.page_count} pages)")
 
@@ -153,13 +152,13 @@ class PDFProcessor:
         return "\n".join([doc.page_content for doc in page_docs])
 
 
-if __name__ == "__main__":
-    file_path = "data/driveshield_specimen_policy_value_plan.pdf"
-    processor = PDFProcessor(file_path)
+# if __name__ == "__main__":
+#     file_path = "data/driveshield_specimen_policy_value_plan.pdf"
+#     processor = PDFProcessor(file_path)
 
-    all_text = processor.get_all_text()
-    print(f"\nTotal characters extracted: {len(all_text)}")
+#     all_text = processor.get_all_text()
+#     print(f"\nTotal characters extracted: {len(all_text)}")
     
-    # Create visualizations
-    processor.visualize_page(1)  # Just page 1
-    # processor.visualize_all_pages()  # All pages
+#     # Create visualizations
+#     processor.visualize_page(1)  # Just page 1
+#     # processor.visualize_all_pages()  # All pages
