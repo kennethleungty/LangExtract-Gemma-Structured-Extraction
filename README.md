@@ -1,6 +1,6 @@
 # Using Google's LangExtract and Gemma 3 for Unstructured Document Processing
 
-**Link to article**: Coming Soon!
+**Link to article**: https://towardsdatascience.com/using-googles-langextract-and-gemma-for-structured-data-extraction/
 
 ## Context
 - Documents like insurance policies, medical records, and compliance reports are notoriously long and tedious to parse. 
@@ -18,3 +18,4 @@
 ## References
 - https://github.com/google/langextract
 - https://deepmind.google/models/gemma/gemma-3/
+
